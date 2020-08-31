@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+body{
+    background-color: #121213;
+}
+
+li, a, button{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    /* color: #0b0c0c; */
+    color: #ffffffb4;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 10px;
+    /* background-color: #18191b00; */
+}
+
+.logo{
+    max-height: 40px;
+    cursor: pointer;
+    margin-right: auto;
+    content: url('../img/picLogo_White.png');
+    transition: all 0.3s ease 0s;
+}
+
+.logo:hover{
+    content: url('../img/picLogo_Black.png');
+    transition: all 0.3s ease 0s;
+}
+
+.nav_list{
+    list-style: none;
+}
+
+.nav_list li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav_list li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_list li:nth-child(1) a:hover{
+    color: #eb8511;
+}
+.nav_list li:nth-child(2) a:hover{
+    color: #a9005d;
+}
+.nav_list li:nth-child(3) a:hover{
+    color: #17cc11;
+}
+.nav_list li:nth-child(4) a:hover{
+    color: #0049a9;
+}
+
+.top{
+    background-image: url('../img/wacom.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top_text_container {
+    font-size: 50px;
+    height: 100%;
+    color: #ffffffb4;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle_container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-flow: row wrap;
+}
+
+.row{
+    display: flex;
+    flex: 100%;
+    flex-flow: row wrap;
+}
+
+.column{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* flex dimensions for columns*/
+.flex-25{ flex: 25%; }
+.flex-33{ flex: 33%; }
+.flex-50{ flex: 50%; }
+.flex-75{ flex: 75%; }
+
+.middle_container img{
+    background-color: #585858;
+}
+
+div.column{
+    background-color: #e6e6e6;
+}
+
+
+.bottom-container{
+    height: 300px;
+}
+
+/* Responsive layout - makes one column-layout instead of two columns */
+@media (max-width: 700px) {
+    .flex-50{
+        flex-basis: 100%;
+        height: calc(77vw);
+    }
+}
