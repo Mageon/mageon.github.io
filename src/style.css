@@ -5,8 +5,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
 }
 
 body{
@@ -17,7 +15,6 @@ li, a, button{
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
     font-size: 18px;
-    /* color: #0b0c0c; */
     color: #ffffffb4;
     text-decoration: none;
 }
@@ -27,7 +24,6 @@ header{
     justify-content: flex-end;
     align-items: center;
     padding: 5px 10px;
-    /* background-color: #18191b00; */
 }
 
 .logo{
@@ -79,6 +75,8 @@ header{
 }
 
 .top_text_container {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
     font-size: 50px;
     height: 100%;
     color: #ffffffb4;
@@ -93,6 +91,8 @@ header{
     width: 80%;
     margin: 0 auto;
     flex-flow: row wrap;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
 }
 
 .row{
@@ -104,7 +104,7 @@ header{
 .column{
     display: flex;
     flex-flow: column wrap;
-    text-align: center;
+    /* text-align: center; */
     justify-content: center;
     align-items: center;
 }
@@ -123,15 +123,50 @@ div.column{
     background-color: #e6e6e6;
 }
 
+div.column p{
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.team{
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #e6e6e6;
+}
+
+.roundFrame{
+    width: 80%;
+    border: none;
+    border-radius: 50%;
+}
+
+.card-text{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
 
 .bottom-container{
     height: 300px;
 }
 
 /* Responsive layout - makes one column-layout instead of two columns */
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .flex-50{
         flex-basis: 100%;
         height: calc(77vw);
     }
+    
+    .team{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team .column{
+        margin: 20px auto;
+    }
 }
+
